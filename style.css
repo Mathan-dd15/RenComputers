@@ -1319,65 +1319,15 @@ body.offer-hidden #navbar {
   text-decoration: none;
 }
 
-.custom-logo-icon {
-  width: 50px;
-  height: 50px;
-  background: linear-gradient(135deg, #2563EB, #1D4ED8);
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
-  flex-shrink: 0;
+.logo-image {
+  height: 60px;
+  width: auto;
+  display: block;
+  transition: var(--transition);
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
 }
 
-.custom-logo-icon .letter {
-  font-size: 24px;
-  font-weight: 900;
-  color: #fff;
-  letter-spacing: -1px;
-  z-index: 2;
-}
-
-.custom-logo-icon .circuit-line {
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.2);
-  bottom: 8px;
-  left: 0;
-  right: 0;
-}
-
-.custom-logo-icon .circuit-dot {
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  background: #FACC15;
-  border-radius: 50%;
-  bottom: 12px;
-  right: 8px;
-}
-
-.custom-logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-}
-
-.custom-logo-text .main {
-  font-size: 1.3rem;
-  font-weight: 900;
-  color: #fff;
-  letter-spacing: 0.05em;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-
-.custom-logo-text .sub {
-  font-size: 0.6rem;
-  font-weight: 600;
-  color: #FACC15;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+.custom-logo:hover .logo-image {
+  transform: scale(1.05);
+  filter: drop-shadow(0 6px 16px rgba(37, 99, 235, 0.3));
 }
